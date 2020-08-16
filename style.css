@@ -48,7 +48,6 @@
 
 }
 #fixedbutton {
-  position: -webkit-sticky;
   position: sticky;
   bottom:0;
   margin-left:90%;
