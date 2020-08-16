@@ -47,6 +47,14 @@
   margin-right: 8px;
 
 }
+#fixedbutton {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  margin-left:90%;
+  padding: 10px;
+
+}
 #usercomment img{
  
   height: 30px;
