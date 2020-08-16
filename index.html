@@ -30,10 +30,10 @@
             <ul class="navbar-nav mr-auto">
 
                 <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link" href="/about.html">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Hall Of Fame</a>
+                    <a class="nav-link" href="/halloffame.html">Hall Of Fame</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -53,7 +53,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact us</a>
+                    <a class="nav-link" href="/contact.html">Contact us</a>
                 </li>
             </ul>
 
@@ -71,63 +71,56 @@
 
 
 
-   
-<!-- LoginModal -->
-<div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="LoginModalLabel"
-aria-hidden="true">
-<div class="modal-dialog">
-    <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title" id="LoginModalLabel"><img src="images/logo.png" alt="logo"
-                    style="padding-right:10px;">Login to Codestunt</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-        <div class="modal-body">
-            <form>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1"
-                        aria-describedby="emailHelp">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                        else.</small>
+    <!-- LoginModal -->
+    <div class="modal fade " id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="LoginModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="LoginModalLabel"><img src="images/logo.png" alt="logo"
+                            style="padding-right:10px;">Login to Codestunt</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
 
-                <button type="submit" class="btn btn-primary">Login</button>
-                <a class="btn btn-primary" href="register.html" role="button">Register</a>
-                <div style=" float:right">
-                    
-                    <ul  style="list-style-type: none;">
-                        <li style="float:left;"><p style="margin-top:5px;">or Login with&nbsp&nbsp</p></li>
-                    <li style="float:left;">
-                        <a  href="#" style="text-decoration:none;"><img src="images/google.png" alt="google"
-                            style="height:20px; width: 20px; margin-right: 5px; margin-top:5px;">&nbsp&nbsp</a>
-                    </li>
-                    <li style="float:left;">
-                        <a href="#"style="text-decoration:none;"><img src="images/face.svg" alt="facebook"
-                                style="height:20px; width: 20px; margin-right: 5px; margin-top:5px;">&nbsp&nbsp</a>
-                    </li>
-                    <li style="float:left;">
-                        <a href="#" style="text-decoration:none;"><img src="images/github.svg" alt="github"
-                                style="height:20px; width: 20px; margin-right: 5px; margin-top:5px;">&nbsp&nbsp</a>
-                    </li>
-                    <li style="float:left;">
-                        <a href="#" style="text-decoration:none;"><img src="images/ln.png" alt="Linkedin"
-                                style="height:20px; width: 20px; margin-right: 5px; margin-top:5px;">&nbsp&nbsp</a>
-                    </li>
-                </ul>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <ul class="navbar-nav mr-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="images/google.png" alt="google"> Login with
+                                Google</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="images/face.svg" alt="facebook"
+                                    style="height:20px; width: 20px; margin-right: 5px;">Login with Facebook</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="images/github.svg" alt="facebook"
+                                    style="height:20px; width: 20px; margin-right: 5px;">Login with Github</a>
+                        </li>
+                    </ul>
+
+                </div>
             </div>
-            </form>
         </div>
     </div>
-</div>
-</div>
-<!--NAV BAR ENDED-->
 
     <!-- carousel -->
 
@@ -599,8 +592,6 @@ aria-hidden="true">
 
 
 
-
-
     <!-- Footer -->
     <footer class="container pt-4 my-md-5 pt-md-5 border-top align-items-end">
 
@@ -620,17 +611,37 @@ aria-hidden="true">
                     <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Categories</h5>
 
                     <ul class="list-unstyled">
-                        <li><a href="#!">ActionScript(0)</a></li>
-                        <li><a href="#!">ActionScript 3(0)</a></li>
-                        <li><a href="#!">Apache(0)</a></li>
-                        <li><a href="#!">AppleScript(0)</a></li>
-                        <li><a href="#!">ASP(0)</a></li>
-                        <li><a href="#!">Assembler(0)</a></li>
-                        <li><a href="#!">AutoIt(0)</a></li>
-                        <li><a href="#!">Awk(0)</a></li>
-                        <li><a href="#!">Bash(0)</a></li>
-                        <li><a href="#!">C(0)</a></li>
-                                                    
+                        <li>
+                            <a href="#!">Actionscript</a>
+                        </li>
+                        <li>
+                            <a href="#!">Actionscript 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Actionscript</a>
+                        </li>
+                        <li>
+                            <a href="#!">Actionscript 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Actionscript</a>
+                        </li>
+                        <li>
+                            <a href="#!">Actionscript 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Actionscript</a>
+                        </li>
+                        <li>
+                            <a href="#!">Actionscript 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Actionscript</a>
+                        </li>
+                        <li>
+                            <a href="#!">Actionscript 3</a>
+                        </li>
+
                     </ul>
 
                 </div>
@@ -642,20 +653,39 @@ aria-hidden="true">
                 <div class="col-md-3 mx-auto">
 
                     <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">&nbsp</h5>
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Categories</h5>
 
                     <ul class="list-unstyled">
-                        <li><a href="#!">C#(0)</a></li>
-                        <li><a href="#!">C++(0)</a></li>
-                        <li><a href="#!">Clojure(0)</a></li>
-                        <li><a href="#!">ColdFusion(0)</a></li>
-                        <li><a href="#!">CSS(0)</a></li>
-                        <li><a href="#!">Delphi(0)</a></li>
-                        <li><a href="#!">Diff(0)</a></li>
-                        <li><a href="#!">Django(0)</a></li>
-                        <li><a href="#!">DOS Batch(0)</a></li>
-                        <li><a href="#!">Emacs Lisp(0)</a></li>
-                        
+                        <li>
+                            <a href="#!">Actionscript</a>
+                        </li>
+                        <li>
+                            <a href="#!">Actionscript 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Actionscript</a>
+                        </li>
+                        <li>
+                            <a href="#!">Actionscript 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Actionscript</a>
+                        </li>
+                        <li>
+                            <a href="#!">Actionscript 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Actionscript</a>
+                        </li>
+                        <li>
+                            <a href="#!">Actionscript 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Actionscript</a>
+                        </li>
+                        <li>
+                            <a href="#!">Actionscript 3</a>
+                        </li>
                     </ul>
 
                 </div>
@@ -667,19 +697,39 @@ aria-hidden="true">
                 <div class="col-md-3 mx-auto">
 
                     <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">&nbsp</h5>
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Categories</h5>
 
                     <ul class="list-unstyled">
-                        <li><a href="#!">eZ Publish(0)</a></li>
-                        <li><a href="#!">Forth(0)</a></li>
-                        <li><a href="#!">Fortran(0)</a></li>
-                        <li><a href="#!">Gnuplot(0)</a></li>
-                        <li><a href="#!">Groovy(0)</a></li>
-                        <li><a href="#!">HAML(0)</a></li>
-                        <li><a href="#!">Haskell(0)</a></li>
-                        <li><a href="#!">HTML(0)</a></li>
-                        <li><a href="#!">iPhone(0)</a></li>
-                        <li><a href="#!">Java(0)</a></li>                    
+                        <li>
+                            <a href="#!">Actionscript</a>
+                        </li>
+                        <li>
+                            <a href="#!">Actionscript 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Actionscript</a>
+                        </li>
+                        <li>
+                            <a href="#!">Actionscript 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Actionscript</a>
+                        </li>
+                        <li>
+                            <a href="#!">Actionscript 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Actionscript</a>
+                        </li>
+                        <li>
+                            <a href="#!">Actionscript 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Actionscript</a>
+                        </li>
+                        <li>
+                            <a href="#!">Actionscript 3</a>
+                        </li>
                     </ul>
 
                 </div>
@@ -694,14 +744,11 @@ aria-hidden="true">
                     <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Contact</h5>
 
                     <ul class="list-unstyled">
-                        <li style="color:#007bff">
-                           Address: 101,Raghav Apartment
-                                Reshimbaug Square, Nagpur, M.H.
-                                India
-                          
+                        <li>
+                            <a href="#!">Address</a>
                         </li>
-                        <li style="color:#007bff">
-                            Contact no: 99778866##
+                        <li>
+                            <a href="#!">contact no:</a>
                         </li>
                         <li>
                             <a href="https://skillshipfoundation.com/">Skillship foundation</a>
@@ -737,6 +784,58 @@ aria-hidden="true">
         <!-- Copyright -->
 
     </footer>
+    <button type="button" class="btn btn-primary" id="fixedbutton" data-toggle="modal" data-target="#postModal">Post
+        Snippet</button>
+
+    <!-- PostModal -->
+    <div class="modal fade" id="postModal" tabindex="-1" aria-labelledby="postModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="postModalLabel">Post Your Code</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Title</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <form action="/action_page.php">
+                            <label for="Language">Choose your Language:</label>
+                            <select id="cars" name="cars">
+                                <option value="Html">Html</option>
+                                <option value="CSS">CSS</option>
+                                <option value="JavaScript">JavaScript</option>
+                                <option value="C++">C++</option>
+                                <option value="Java">Java</option>
+                                <option value="C">C</option>
+                                <option value="Python">Python</option>
+                                <option value="Ruby">Ruby</option>
+                                <option value="Matlab">Matlab</option>
+                                <option value="C#">C#</option>
+                                <option value="Xml">Xml</option>
+                                <option value="JQuery">JQuery</option>
+                                <option value="Sql">SQL</option>
+                            </select>
+                            
+                        </form>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Code</label>
+                            <textarea class="form-control" id="message-text" style="height: 500px;"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Post</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -748,7 +847,8 @@ aria-hidden="true">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
-   
+
+
 </body>
 
 </html>
