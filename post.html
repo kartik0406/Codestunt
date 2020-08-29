@@ -19,7 +19,7 @@
 <body>
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar1">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar1" style="width:100%">
         <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" style="padding-right:10px;"
                 class="profileinvert">Codestunt</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -133,17 +133,20 @@ aria-hidden="true">
 
   
 
-
+<!--Post form-->
 <form style="margin-top:100px;" action=postsnippet.php>
     <h2 style="margin-left:25px">Post Your Code</h2>
-    <div class="form-group"  style="margin-left: 30px; width:1000px">
+    <table style="width:80%; margin-left:2%;"><tr><td>
+    <div class="form-group"  >
       <label for="Title">Title</label>
       <input type="Title" class="form-control" id="title" aria-describedby="titleHelp">
     </div>
-    <div class="form-group"  style="margin-left: 30px;  width:1000px">
+    <div class="form-group"  >
       <label for="description">Description</label>
       <input type="Description" class="form-control" id="description">
     </div>
+</td></tr>
+</table>
     <div class="form-group"  style="margin-left: 30px;">
         <label for="Language">Choose your Language:</label>
         <select id="cars" name="cars">
@@ -162,10 +165,14 @@ aria-hidden="true">
             <option value="Sql">SQL</option>
         </select>
     </div>
-    <div class="form-group"  style="margin-left: 30px;">
-        <input type="file" id="image" name="Image">
-    </div>
-    <div class="form-group" style="margin-left: 35px;">
+    <form>
+        <div class="form-group" style="margin-left: 30px;">
+          <label for="image"><b>Upload a thumbnail Image for your code:</b></label>
+          <input type="file" class="form-control-file" id="image">
+        </div>
+      </form>
+ 
+    <div class="form-group" style="margin-left: 35px; margin-right: 35px;">
     <textarea name="editor1" id="editor1" rows="20" cols="200" style="width:90px;">
        //Enter your code here
     </textarea>
@@ -178,6 +185,7 @@ aria-hidden="true">
     <button type="submit" class="btn btn-primary" style="margin-left: 40px; width: 90px; font-weight: 900;">Post</button>
   </form>
 
+<!--Post form ends-->
 
 
 
@@ -317,57 +325,7 @@ aria-hidden="true">
         
     </footer>
     
-    <button type="button" class="btn btn-primary" id="fixedbutton" data-toggle="modal" data-target="#postModal">Post
-        Snippet</button>
-
-    <!-- PostModal -->
-    <div class="modal fade" id="postModal" tabindex="-1" aria-labelledby="postModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="postModalLabel">Post Your Code</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Title</label>
-                            <input type="text" class="form-control" id="recipient-name">
-                        </div>
-                        <form action="/action_page.php">
-                            <label for="Language">Choose your Language:</label>
-                            <select id="cars" name="cars">
-                                <option value="Html">Html</option>
-                                <option value="CSS">CSS</option>
-                                <option value="JavaScript">JavaScript</option>
-                                <option value="C++">C++</option>
-                                <option value="Java">Java</option>
-                                <option value="C">C</option>
-                                <option value="Python">Python</option>
-                                <option value="Ruby">Ruby</option>
-                                <option value="Matlab">Matlab</option>
-                                <option value="C#">C#</option>
-                                <option value="Xml">Xml</option>
-                                <option value="JQuery">JQuery</option>
-                                <option value="Sql">SQL</option>
-                            </select>
-                            
-                        </form>
-                        <div class="form-group">
-                            <label for="message-text" class="col-form-label">Code</label>
-                            <textarea class="form-control" id="message-text" style="height: 500px;"></textarea>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Post</button>
-                </div>
-            </div>
-        </div>
-    </div>
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
