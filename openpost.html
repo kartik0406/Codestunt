@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Source Code</title>
+
+    <script src="https://cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar1" style="width:100%">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" style="padding-right:10px;"
+                class="profileinvert">Codestunt</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-bottom: 5px;">
+
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Hall Of Fame</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Get Code
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Html</a>
+                        <a class="dropdown-item" href="#">CSS</a>
+                        <a class="dropdown-item" href="#">JavaScipt</a>
+                        <a class="dropdown-item" href="#">C++</a>
+                        <a class="dropdown-item" href="#">Java</a>
+
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Explore all</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact us</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav mr-right">
+                <li class="nav-item" style="padding-right: 15px;">
+                    <a class="nav-link" href="sign.html" data-toggle="modal" data-target="#LoginModal">Sign In</a>
+                </li>
+
+                <li class="nav-item profileinvert" style="margin-top: 3px; margin-right: 10px;">
+                    <a href="profile.html"><img src="images/profile.svg" alt="profile" height="40" width="40"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+    <!-- LoginModal -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="LoginModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="LoginModalLabel"><img src="images/logo.png" alt="logo"
+                            style="padding-right:10px;">Login to Codestunt</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Login</button>
+                        <a class="btn btn-primary" href="register.html" role="button">Register</a>
+                        <div style=" float:right">
+
+                            <ul style="list-style-type: none;">
+                                <li style="float:left;">
+                                    <p style="margin-top:5px;">or Login with&nbsp&nbsp</p>
+                                </li>
+                                <li style="float:left;">
+                                    <a href="#" style="text-decoration:none;"><img src="images/google.png" alt="google"
+                                            style="height:20px; width: 20px; margin-right: 5px; margin-top:5px;">&nbsp&nbsp</a>
+                                </li>
+                                <li style="float:left;">
+                                    <a href="#" style="text-decoration:none;"><img src="images/face.svg" alt="facebook"
+                                            style="height:20px; width: 20px; margin-right: 5px; margin-top:5px;">&nbsp&nbsp</a>
+                                </li>
+                                <li style="float:left;">
+                                    <a href="#" style="text-decoration:none;"><img src="images/github.svg" alt="github"
+                                            style="height:20px; width: 20px; margin-right: 5px; margin-top:5px;">&nbsp&nbsp</a>
+                                </li>
+                                <li style="float:left;">
+                                    <a href="#" style="text-decoration:none;"><img src="images/ln.png" alt="Linkedin"
+                                            style="height:20px; width: 20px; margin-right: 5px; margin-top:5px;">&nbsp&nbsp</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--NAV BAR ENDED-->
+
+    <div class="container-fluid" style="margin-left:0px; margin-right:0px;">
+
+        <!--Post form-->
+        <form style="margin-top:100px;" action=postsnippet.php>
+
+            <form>
+                <div class="form-group" style="margin-left: 30px;">
+                    <h2 id="postTile" style="margin-left:35px">Title</h2>
+                    <h5 id="postDescription" style="margin-left:35px">Description</h5>
+                    <h6 id="postWriter" style="margin-left:35px">by xyz</h6>
+                    
+                    <h6  style="margin-left:35px">Views <img src="images/eye.png" alt="Views">:200
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Likes<img
+                            src="images/heart-regular-24.png">:1M&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Comments <img src="images/message-square-edit-regular-24.png" alt="comments">:1441</h6>
+                        
+                    <button type="submit" class="btn btn-primary"
+                        style="float: right;margin-right: 3%; width: 90px; font-weight: 900;">Copy</button>
+                    <br><br>
+                    <div class="form-group" style="margin-left: 35px; margin-right: 35px;">
+                        <textarea name="editor1" id="editor1" rows="20" cols="200" style="width:90px;">
+                 //Enter your code here
+                </textarea>
+                        <script>
+                            // Replace the <textarea id="editor1"> with a CKEditor 4
+                            // instance, using default configuration.
+                            CKEDITOR.replace('editor1');
+                        </script>
+                    </div>
+            </form>
+
+            <!--Post form ends-->
+
+            <!-- addcomment -->
+            <div class="card1" style="width:100%;">
+                <div class="row">
+                    <img src="https://i.imgur.com/xELPaag.jpg" width="60" height="60"
+                            class="rounded-circle mt-2">
+                    <div class="col-10">
+                        <div class="comment-box ml-2">
+                            <h4>Add a comment</h4>
+                            <div class="rating"> <input type="radio" name="rating" value="5" id="5"><label
+                                    for="5">☆</label> <input type="radio" name="rating" value="4" id="4"><label
+                                    for="4">☆</label> <input type="radio" name="rating" value="3" id="3"><label
+                                    for="3">☆</label> <input type="radio" name="rating" value="2" id="2"><label
+                                    for="2">☆</label> <input type="radio" name="rating" value="1" id="1"><label
+                                    for="1">☆</label> </div>
+                            <div class="comment-area"> <textarea class="form-control" placeholder="what is your view?"
+                                    rows="6"></textarea> </div>
+                            <div class="comment-btns mt-2">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="pull-left"> <button class="btn btn-success btn-sm">Cancel</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="pull-right"> <button class="btn btn-success send btn-sm">Send <i
+                                                    class="fa fa-long-arrow-right ml-1"></i></button> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- comment -->
+            <div class="container mt-5">
+                <div class="d-flex justify-content-center row">
+                    <div class="col-md-6">
+                        <div class="p-3 bg-white rounded">
+                            <h6>Comments[8]</h6>
+                            <div class="review mt-4">
+                                <div class="d-flex flex-row comment-user"><img class="rounded"
+                                        src="https://i.imgur.com/xxJl1D7.jpg" width="25">
+                                    <div class="ml-2">
+                                        <div class="d-flex flex-row align-items-center"><span
+                                                class="name font-weight-bold">Hui jhong</span><span
+                                                class="dot"></span><span class="date">12 Aug 2020</span></div>
+                                        <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                                    </div>
+                                </div>
+                                <div class="mt-2">
+                                    <p class="comment-text">It is a long established fact that a reader will be
+                                        distracted by the readable content of a page when looking at its layout. The
+                                        point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+                                        letters, as opposed to using 'Content here, content here', making it look like
+                                        readable English.</p>
+                                </div>
+                            </div>
+                            <div class="review mt-4">
+                                <div class="d-flex flex-row comment-user"><img class="rounded"
+                                        src="https://i.imgur.com/xxJl1D7.jpg" width="40">
+                                    <div class="ml-2">
+                                        <div class="d-flex flex-row align-items-center"><span
+                                                class="name font-weight-bold">Timso hui</span><span
+                                                class="dot"></span><span class="date">12 Aug 2020</span></div>
+                                        <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                                    </div>
+                                </div>
+                                <div class="mt-2">
+                                    <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                                </div>
+                            </div>
+                            <div class="review mt-4">
+                                <div class="d-flex flex-row comment-user"><img class="rounded"
+                                        src="https://i.imgur.com/xxJl1D7.jpg" width="40">
+                                    <div class="ml-2">
+                                        <div class="d-flex flex-row align-items-center"><span
+                                                class="name font-weight-bold">Hui jhong</span><span
+                                                class="dot"></span><span class="date">12 Aug 2020</span></div>
+                                        <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                                    </div>
+                                </div>
+                                <div class="mt-2">
+                                    <p class="comment-text">It is a long established fact that a reader will be
+                                        distracted by the readable content of a page when looking at its layout. The
+                                        point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+                                        letters, as opposed to using 'Content here, content here', making it look like
+                                        readable English.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- commentclose -->
+
+
+
+
+
+            <!-- Footer -->
+            <footer class="container pt-4 my-md-5 pt-md-5 border-top align-items-end">
+
+            </footer>
+            <footer class="page-footer font-small indigo">
+
+                <!-- Footer Links -->
+                <div class="container text-center text-md-left">
+
+                    <!-- Grid row -->
+                    <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 mx-auto">
+
+                            <!-- Links -->
+                            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Categories</h5>
+
+                            <ul class="list-unstyled">
+                                <li><a href="#!">ActionScript(0)</a></li>
+                                <li><a href="#!">ActionScript 3(0)</a></li>
+                                <li><a href="#!">Apache(0)</a></li>
+                                <li><a href="#!">AppleScript(0)</a></li>
+                                <li><a href="#!">ASP(0)</a></li>
+                                <li><a href="#!">Assembler(0)</a></li>
+                                <li><a href="#!">AutoIt(0)</a></li>
+                                <li><a href="#!">Awk(0)</a></li>
+                                <li><a href="#!">Bash(0)</a></li>
+                                <li><a href="#!">C(0)</a></li>
+
+                            </ul>
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <hr class="clearfix w-100 d-md-none">
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 mx-auto">
+
+                            <!-- Links -->
+                            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">&nbsp</h5>
+
+                            <ul class="list-unstyled">
+                                <li><a href="#!">C#(0)</a></li>
+                                <li><a href="#!">C++(0)</a></li>
+                                <li><a href="#!">Clojure(0)</a></li>
+                                <li><a href="#!">ColdFusion(0)</a></li>
+                                <li><a href="#!">CSS(0)</a></li>
+                                <li><a href="#!">Delphi(0)</a></li>
+                                <li><a href="#!">Diff(0)</a></li>
+                                <li><a href="#!">Django(0)</a></li>
+                                <li><a href="#!">DOS Batch(0)</a></li>
+                                <li><a href="#!">Emacs Lisp(0)</a></li>
+
+                            </ul>
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <hr class="clearfix w-100 d-md-none">
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 mx-auto">
+
+                            <!-- Links -->
+                            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">&nbsp</h5>
+
+                            <ul class="list-unstyled">
+                                <li><a href="#!">eZ Publish(0)</a></li>
+                                <li><a href="#!">Forth(0)</a></li>
+                                <li><a href="#!">Fortran(0)</a></li>
+                                <li><a href="#!">Gnuplot(0)</a></li>
+                                <li><a href="#!">Groovy(0)</a></li>
+                                <li><a href="#!">HAML(0)</a></li>
+                                <li><a href="#!">Haskell(0)</a></li>
+                                <li><a href="#!">HTML(0)</a></li>
+                                <li><a href="#!">iPhone(0)</a></li>
+                                <li><a href="#!">Java(0)</a></li>
+                            </ul>
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <hr class="clearfix w-100 d-md-none">
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 mx-auto">
+
+                            <!-- Links -->
+                            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Contact</h5>
+
+                            <ul class="list-unstyled">
+                                <li style="color:#007bff">
+                                    Address: 101,Raghav Apartment
+                                    Reshimbaug Square, Nagpur, M.H.
+                                    India
+
+                                </li>
+                                <li style="color:#007bff">
+                                    Contact no: 99778866##
+                                </li>
+                                <li>
+                                    <a href="https://skillshipfoundation.com/">Skillship foundation</a>
+                                </li>
+
+
+                            </ul>
+
+                        </div>
+                        <!-- Grid column -->
+
+                    </div>
+                    <!-- Grid row -->
+
+                </div>
+                <!-- Footer Links -->
+
+
+
+                <!-- Copyright -->
+                <div class="footer-copyright text-center py-3">
+                    <table style="width:100%;">
+                        <tr>
+                            <td>
+                                <p style="float: left; margin-left:8%;">© 2020 Codestunt, Skillship foundation. All
+                                    Rights
+                                    Reserved · <a href="#">Privacy</a> · <a href="#">Terms</a>
+                                </p>
+                            </td>
+                            <td>
+                                <a href="#"><button type="button" class="btn btn-dark"> Back to top</button>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- Copyright -->
+
+            </footer>
+
+
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+                integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+                crossorigin="anonymous"></script>
+
+    </div>
+</body>
+
+</html>

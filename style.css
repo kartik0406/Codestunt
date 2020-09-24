@@ -63,3 +63,96 @@ html {
   
   margin-right: 9px;
 }
+
+
+
+.comment-box {
+  padding: 5px
+}
+
+.comment-area textarea {
+  resize: none;
+  border: 1px solid #ad9f9f
+}
+.card1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 20px;
+  width: 1500px;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border-radius: 6px;
+  -moz-box-shadow: 0px 0px 5px 0px rgba(212, 182, 212, 1)
+}
+.rating i {
+  color: green;
+  font-size: 13px
+}
+
+.rating {
+  display: flex;
+  margin-top: -10px;
+  flex-direction: row-reverse;
+  margin-left: -4px;
+  float: left
+}
+
+.rating>input {
+  display: none
+}
+
+.rating>label {
+  position: relative;
+  width: 19px;
+  font-size: 25px;
+  color: #ff0000;
+  cursor: pointer
+}
+
+.rating>label::before {
+  content: "\2605";
+  position: absolute;
+  opacity: 0
+}
+
+.rating>label:hover:before,
+.rating>label:hover~label:before {
+  opacity: 1 !important
+}
+
+.rating>input:checked~label:before {
+  opacity: 1
+}
+
+.rating:hover>input:checked~label:before {
+  opacity: 0.4
+}
+
+
+.dot {
+  height: 6px;
+  width: 6px;
+  margin-left: 10px;
+  margin-right: 3px;
+  margin-top: 40px;
+  background-color: rgb(91, 92, 91);
+  border-radius: 50%;
+  display: inline-block
+}
+
+
+.name {
+  font-size: 14px
+}
+
+.date {
+  font-size: 12px
+}
+
+.rating i {
+  color: green;
+  font-size: 13px
+}
