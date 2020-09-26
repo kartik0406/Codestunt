@@ -133,44 +133,43 @@
     </div>
     <!--NAV BAR ENDED-->
 
-    <div class="container-fluid" style="margin-left:0px; margin-right:0px;">
+    <div class="container-fluid" >
 
         <!--Post form-->
         <form style="margin-top:100px;" action=postsnippet.php>
 
             <form>
-                <div class="form-group" style="margin-left: 30px;">
-                    <h2 id="postTile" style="margin-left:35px">Title</h2>
-                    <h5 id="postDescription" style="margin-left:35px">Description</h5>
-                    <h6 id="postWriter" style="margin-left:35px">by xyz</h6>
+                <div class="form-group">
+                    <div style="margin-left:6%;">
+                        <h2 id="postTile" style="margin-left:35px">Title</h2>
+                        <h5 id="postDescription" style="margin-left:35px">Description</h5>
+                        <h6 id="postWriter" style="margin-left:35px">by xyz</h6>
                     
-                    <h6  style="margin-left:35px">Views <img src="images/eye.png" alt="Views">:200
+                    <h6 style="margin-left:35px">Views <img src="images/eye.png" alt="Views">:200
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Likes<img
                             src="images/heart-regular-24.png">:1M&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         Comments <img src="images/message-square-edit-regular-24.png" alt="comments">:1441</h6>
-                        
-                    <button type="submit" class="btn btn-primary"
-                        style="float: right;margin-right: 3%; width: 90px; font-weight: 900;">Copy</button>
-                    <br><br>
-                    <div class="form-group" style="margin-left: 35px; margin-right: 35px;">
-                        <textarea name="editor1" id="editor1" rows="20" cols="200" style="width:90px;">
-                 //Enter your code here
-                </textarea>
-                        <script>
-                            // Replace the <textarea id="editor1"> with a CKEditor 4
-                            // instance, using default configuration.
-                            CKEDITOR.replace('editor1');
-                        </script>
                     </div>
+                    <button type="submit" class="btn btn-primary"
+                        style="float: right;margin-right: 10%; width: 90px; font-weight: 900;">Copy</button>
+                    
+                    <br><br>
+                    <table style="border:2px solid black; margin-left: auto; margin-right: auto;" height="250px" width="80%">
+                        <tr>
+                            <td style="vertical-align:top;">
+                            <h5>Your code appears here!!</h5>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </form>
 
             <!--Post form ends-->
 
             <!-- addcomment -->
-            <div class="card1" style="width:100%;">
+            <div class="card1" style="width:100%; margin-left: auto; margin-right: auto;">
                 <div class="row">
-                    <img src="https://i.imgur.com/xELPaag.jpg" width="60" height="60"
-                            class="rounded-circle mt-2">
+                    <img src="https://i.imgur.com/xELPaag.jpg" width="60" height="60" class="rounded-circle mt-2">
                     <div class="col-10">
                         <div class="comment-box ml-2">
                             <h4>Add a comment</h4>
@@ -199,14 +198,14 @@
                 </div>
             </div>
             <!-- comment -->
-            <div class="container mt-5">
-                <div class="d-flex justify-content-center row">
-                    <div class="col-md-6">
+            <div class="container mt-5" style="margin-left: auto;margin-right: auto; ">
+                <div class="d-flex justify-content-center row" >
+                    <div class="col-md-6" style="overflow: auto; height:500px;">
                         <div class="p-3 bg-white rounded">
                             <h6>Comments[8]</h6>
                             <div class="review mt-4">
                                 <div class="d-flex flex-row comment-user"><img class="rounded"
-                                        src="https://i.imgur.com/xxJl1D7.jpg" width="25">
+                                        src="https://i.imgur.com/xxJl1D7.jpg" width="40">
                                     <div class="ml-2">
                                         <div class="d-flex flex-row align-items-center"><span
                                                 class="name font-weight-bold">Hui jhong</span><span
@@ -224,6 +223,55 @@
                                 </div>
                             </div>
                             <div class="review mt-4">
+                                <div class="d-flex flex-row comment-user"><img class="rounded"
+                                        src="https://i.imgur.com/xxJl1D7.jpg" width="40">
+                                    <div class="ml-2">
+                                        <div class="d-flex flex-row align-items-center"><span
+                                                class="name font-weight-bold">Timso hui</span><span
+                                                class="dot"></span><span class="date">12 Aug 2020</span></div>
+                                        <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                                    </div>
+                                </div>
+                                <div class="mt-2">
+                                    <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                                </div>
+                            </div>
+                            <div class="review mt-4">
+                                <div class="d-flex flex-row comment-user"><img class="rounded"
+                                        src="https://i.imgur.com/xxJl1D7.jpg" width="40">
+                                    <div class="ml-2">
+                                        <div class="d-flex flex-row align-items-center"><span
+                                                class="name font-weight-bold">Timso hui</span><span
+                                                class="dot"></span><span class="date">12 Aug 2020</span></div>
+                                        <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                                    </div>
+                                </div>
+                                <div class="mt-2">
+                                    <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                                </div>
+                            </div>                            <div class="review mt-4">
+                                <div class="d-flex flex-row comment-user"><img class="rounded"
+                                        src="https://i.imgur.com/xxJl1D7.jpg" width="40">
+                                    <div class="ml-2">
+                                        <div class="d-flex flex-row align-items-center"><span
+                                                class="name font-weight-bold">Timso hui</span><span
+                                                class="dot"></span><span class="date">12 Aug 2020</span></div>
+                                        <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                                    </div>
+                                </div>
+                                <div class="mt-2">
+                                    <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                                </div>
+                            </div>                            <div class="review mt-4">
                                 <div class="d-flex flex-row comment-user"><img class="rounded"
                                         src="https://i.imgur.com/xxJl1D7.jpg" width="40">
                                     <div class="ml-2">
@@ -410,8 +458,9 @@
 
             </footer>
 
-            <a href="post.html"><button style="float: right; margin-bottom:10px;" type="button" class="btn btn-primary" id="fixedbutton">Post
-                Snippet</button></a>
+            <a href="post.html"><button style="float: right; margin-bottom:10px;" type="button" class="btn btn-primary"
+                    id="fixedbutton">Post
+                    Snippet</button></a>
             <!-- Optional JavaScript -->
             <!-- jQuery first, then Popper.js, then Bootstrap JS -->
             <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
