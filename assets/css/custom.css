@@ -1,0 +1,257 @@
+  /*===========Aninmation */
+.container_cover {
+  width: 100%;
+  height:100% ;
+}
+
+.animation-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.animation-area li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 25px;
+  height: 25px;
+  animation: animate 20s linear infinite;
+  bottom: -150px;
+}
+
+.animation-area li:nth-child(1) {
+  left: 85%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+.animation-area li:nth-child(2) {
+  left: 75%;
+  width: 50px;
+  height: 50px;
+  animation-delay: 1.5s;
+  animation-duration: 10s;
+}
+
+.animation-area li:nth-child(3) {
+  left: 60%;
+  width: 100px;
+  height: 100px;
+  animation-delay: 5.5s;
+}
+
+.animation-area li:nth-child(4) {
+  left: 40%;
+  width: 50px;
+  height: 50px;
+  animation-delay: 0s;
+  animtion-duration: 15s;
+}
+
+.animation-area li:nth-child(5) {
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+.animation-area li:nth-child(6) {
+  left: 10%;
+  width: 120px;
+  height: 120px;
+  animation-delay: 3.5s;
+}
+.animation-area li:nth-child(7) {
+  left: 35%;
+  width: 120px;
+  height: 120px;
+  animation-delay: 4.5s;
+}
+.animation-area li:nth-child(8) {
+  left: 5%;
+  width: 120px;
+  height: 120px;
+  animation-delay: 7s;
+}.animation-area li:nth-child(9) {
+  left: 40%;
+  width: 120px;
+  height: 120px;
+  animation-delay: 4s;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  
+  100% {
+    transform: translateY(-800px) rotate(0deg);
+    opacity: 0
+  }
+
+/*================================================================*/
+<!-- Icon bar -->
+  
+.icon-bar {
+	position: fixed;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+  }
+  
+  .icon-bar a {
+	display: block;
+	text-align: center;
+	padding: 16px;
+	transition: all 0.3s ease;
+	color: white;
+	font-size: 20px;
+  }
+  
+  .icon-bar a:hover {
+	background-color: #000;
+  }
+  
+  .facebook {
+	background: #3B5998;
+	color: white;
+  }
+  
+  .twitter {
+	background: #55ACEE;
+	color: white;
+  }
+  
+  .google {
+	background: #dd4b39;
+	color: white;
+  }
+  
+  .linkedin {
+	background: #007bb5;
+	color: white;
+  }
+  
+  .youtube {
+	background: #bb0000;
+	color: white;
+  }
+  
+  .content {
+	margin-left: 75px;
+	font-size: 30px;
+  }
+  .icon {
+	display: none;
+	margin-top: 40px;
+	height: 30px ;
+	width: 30px;
+  }
+
+<!-- Icon bar ended -->
+
+<!-- Text animation from code pen -->
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+.animate {
+	font-size: 50px;
+	margin: 100px 0 0;
+	border-bottom: 2px solid #ccc;
+}
+
+.animate span {
+	display: inline-block;
+}
+.animate span:nth-of-type(2) {
+	animation-delay: .05s;
+}
+.animate span:nth-of-type(3) {
+	animation-delay: .1s;
+}
+.animate span:nth-of-type(4) {
+	animation-delay: .15s;
+}
+.animate span:nth-of-type(5) {
+	animation-delay: .2s;
+}
+.animate span:nth-of-type(6) {
+	animation-delay: .25s;
+}
+.animate span:nth-of-type(7) {
+	animation-delay: .3s;
+}
+.animate span:nth-of-type(8) {
+	animation-delay: .35s;
+}
+.animate span:nth-of-type(9) {
+	animation-delay: .4s;
+}
+.animate span:nth-of-type(10) {
+	animation-delay: .45s;
+}
+.animate span:nth-of-type(11) {
+	animation-delay: .5s;
+}
+.animate span:nth-of-type(12) {
+	animation-delay: .55s;
+}
+.animate span:nth-of-type(13) {
+	animation-delay: .6s;
+}
+.animate span:nth-of-type(14) {
+	animation-delay: .65s;
+}
+.animate span:nth-of-type(15) {
+	animation-delay: .7s;
+}
+.animate span:nth-of-type(16) {
+	animation-delay: .75s;
+}
+.animate span:nth-of-type(17) {
+	animation-delay: .8s;
+}
+.animate span:nth-of-type(18) {
+	animation-delay: .85s;
+}
+.animate span:nth-of-type(19) {
+	animation-delay: .9s;
+}
+.animate span:nth-of-type(20) {
+	animation-delay: .95s;
+}
+
+.seven span {
+	color: #348c04;
+	opacity: 0;
+	transform: translate(-150px, 0) scale(.3);
+	animation: leftRight .5s forwards;
+}
+
+
+@keyframes leftRight {
+	40% {
+		transform: translate(50px, 0) scale(.7);
+		opacity: 1;
+		color: #348c04;
+	}
+
+	60% {
+		color: #0f40ba;
+	}
+
+	80% {
+		transform: translate(0) scale(2);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translate(0) scale(1);
+		opacity: 1;
+	}
+}
+
