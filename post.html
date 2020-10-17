@@ -20,21 +20,23 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&display=swap" rel="stylesheet">
     <title>Post your Snippet</title>
 
     <script src="https://cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
     <style>
       .hero {
         background-image: url("images/about4.jpg");
-        opacity: 0.75;
+        opacity: 1;
         /* Full height */
         height: 100%;
         align-content: center;
-        color:whitesmoke;
+        color:rgb(226, 216, 250);
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        font-family:'Baloo Bhai 2', cursive;
       }
       .navbar{
           min-height: 100px;
@@ -43,20 +45,18 @@
   </head>
 
   <body>
-      
-   
     <!-- navbar -->
     <nav
       class="navbar navbar-expand-lg navbar-dark  fixed-top navbar1"
-      style="width: 100%; background-color:rgb(7, 4, 34);"
+      style="width: 100%; background-color:rgb(13, 1, 126)"
     >
       <a class="navbar-brand" href="index.html"
         ><img
-          src="images/logo.png"
+          src="/images/logo.png"
           alt="logo"
           style="padding-right: 10px"
           class="profileinvert"
-        />Snip code</a
+        />Codestunt</a
       >
       <button
         class="navbar-toggler"
@@ -126,9 +126,9 @@
             class="nav-item profileinvert"
             style="margin-top: 3px; margin-right: 10px"
           >
-            <a href="profile2.html"
+            <a href="profile.html"
               ><img
-                src="images/profile.svg"
+                src="/images/profile.svg"
                 alt="profile"
                 height="40"
                 width="40"
@@ -138,357 +138,390 @@
       </div>
     </nav>
 
-      <!-- LoginModal -->
-      <div
-        class="modal fade"
-        id="LoginModal"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="LoginModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="LoginModalLabel">
-                <img
-                  src="images/logo.png"
-                  alt="logo"
-                  style="padding-right: 10px"
-                />Login to Codestunt
-              </h5>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <form>
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Email address</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                  />
-                  <small id="emailHelp" class="form-text text-muted"
-                    >We'll never share your email with anyone else.</small
-                  >
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Password</label>
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="exampleInputPassword1"
-                  />
-                </div>
-
-                <button type="submit" class="btn btn-primary">Login</button>
-                <a class="btn btn-primary" href="register.html" role="button"
-                  >Register</a
+    <!-- LoginModal -->
+    <div
+      class="modal fade"
+      id="LoginModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="LoginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="LoginModalLabel">
+              <img
+                src="/images/logo.png"
+                alt="logo"
+                style="padding-right: 10px"
+              />Login to Codestunt
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <small id="emailHelp" class="form-text text-muted"
+                  >We'll never share your email with anyone else.</small
                 >
-                <div style="float: right">
-                  <ul style="list-style-type: none">
-                    <li style="float: left">
-                      <p style="margin-top: 5px">or Login with&nbsp&nbsp</p>
-                    </li>
-                    <li style="float: left">
-                      <a href="#" style="text-decoration: none"
-                        ><img
-                          src="images/google.png"
-                          alt="google"
-                          style="
-                            height: 20px;
-                            width: 20px;
-                            margin-right: 5px;
-                            margin-top: 5px;
-                          "
-                        />&nbsp&nbsp</a
-                      >
-                    </li>
-                    <li style="float: left">
-                      <a href="#" style="text-decoration: none"
-                        ><img
-                          src="images/face.svg"
-                          alt="facebook"
-                          style="
-                            height: 20px;
-                            width: 20px;
-                            margin-right: 5px;
-                            margin-top: 5px;
-                          "
-                        />&nbsp&nbsp</a
-                      >
-                    </li>
-                    <li style="float: left">
-                      <a href="#" style="text-decoration: none"
-                        ><img
-                          src="images/github.svg"
-                          alt="github"
-                          style="
-                            height: 20px;
-                            width: 20px;
-                            margin-right: 5px;
-                            margin-top: 5px;
-                          "
-                        />&nbsp&nbsp</a
-                      >
-                    </li>
-                    <li style="float: left">
-                      <a href="#" style="text-decoration: none"
-                        ><img
-                          src="images/ln.png"
-                          alt="Linkedin"
-                          style="
-                            height: 20px;
-                            width: 20px;
-                            margin-right: 5px;
-                            margin-top: 5px;
-                          "
-                        />&nbsp&nbsp</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--NAV BAR ENDED-->
-      <div class="hero">
-      <div class="container-fluid" style="margin-left: 0px; margin-right: 0px; margin-top: 0%;">
-        <!--Post form-->
-        <form style="margin-top: 100px" action="postsnippet.php">
-          <h2 style="margin-left: 25px">Post Your Code</h2>
-          <table style="width: 80%; margin-left: 2%">
-            <tr>
-              <td>
-                <div class="form-group">
-                  <label for="Title">Title</label>
-                  <input
-                    type="Title"
-                    class="form-control"
-                    id="title"
-                    aria-describedby="titleHelp"
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="description">Description</label>
-                  <input
-                    type="Description"
-                    class="form-control"
-                    id="description"
-                  />
-                </div>
-              </td>
-            </tr>
-          </table>
-          <div class="form-group" style="margin-left: 30px; color:white">
-            <label for="Language">Choose your Language:</label>
-            <select id="cars" name="cars">
-              <option value="Html">Html</option>
-              <option value="CSS">CSS</option>
-              <option value="JavaScript">JavaScript</option>
-              <option value="C++">C++</option>
-              <option value="Java">Java</option>
-              <option value="C">C</option>
-              <option value="Python">Python</option>
-              <option value="Ruby">Ruby</option>
-              <option value="Matlab">Matlab</option>
-              <option value="C#">C#</option>
-              <option value="Xml">Xml</option>
-              <option value="JQuery">JQuery</option>
-              <option value="Sql">SQL</option>
-            </select>
-          </div>
-          <form>
-            <div class="form-group" style="margin-left: 30px">
-              <label for="image"
-                ><b>Upload a thumbnail Image for your code:</b></label
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+
+              <button type="submit" class="btn btn-primary">Login</button>
+              <a class="btn btn-primary" href="register.html" role="button"
+                >Register</a
               >
-              <input type="file" class="form-control-file" id="image" />
-            </div>
-          </form>
-
-          <div class="form-group" style="margin-left: 35px; margin-right: 35px">
-            <textarea
-              name="editor1"
-              id="editor1"
-              rows="20"
-              cols="200"
-              style="width: 90px"
-            >
-       //Enter your code here
-    </textarea
-            >
-            <script>
-              // Replace the <textarea id="editor1"> with a CKEditor 4
-              // instance, using default configuration.
-              CKEDITOR.replace("editor1");
-            </script>
-          </div>
-          <button
-            type="submit"
-            class="btn btn-primary"
-            style="margin-left: 40px; width: 90px; font-weight: 900"
-          >
-            Post
-          </button>
-        </form>
-
-        <!--Post form ends-->
-
-        <!-- Footer -->
-        <footer
-          class="container pt-4 my-md-5 pt-md-5 border-top align-items-end" 
-        ></footer>
-        <footer class="page-footer font-small indigo">
-          <!-- Footer Links -->
-          <div class="container text-center text-md-left">
-            <!-- Grid row -->
-            <div class="row">
-              <!-- Grid column -->
-              <div class="col-md-3 mx-auto">
-                <!-- Links -->
-                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">
-                  Categories
-                </h5>
-
-                <ul class="list-unstyled">
-                  <li><a href="#!" style="color:white">ActionScript(0)</a></li>
-                  <li><a href="#!" style="color:white">ActionScript 3(0)</a></li>
-                  <li><a href="#!" style="color:white">Apache(0)</a></li>
-                  <li><a href="#!"style="color:white">AppleScript(0)</a></li>
-                  <li><a href="#!"style="color:white">ASP(0)</a></li>
-                  <li><a href="#!"style="color:white">Assembler(0)</a></li>
-                  <li><a href="#!"style="color:white">AutoIt(0)</a></li>
-                  <li><a href="#!"style="color:white">Awk(0)</a></li>
-                  <li><a href="#!"style="color:white">Bash(0)</a></li>
-                  <li><a href="#!"style="color:white">C(0)</a></li>
-                </ul>
-              </div>
-              <!-- Grid column -->
-
-              <hr class="clearfix w-100 d-md-none" />
-
-              <!-- Grid column -->
-              <div class="col-md-3 mx-auto">
-                <!-- Links -->
-                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">&nbsp</h5>
-
-                <ul class="list-unstyled">
-                  <li><a href="#!"style="color:white">C#(0)</a></li>
-                  <li><a href="#!"style="color:white">C++(0)</a></li>
-                  <li><a href="#!"style="color:white">Clojure(0)</a></li>
-                  <li><a href="#!"style="color:white">ColdFusion(0)</a></li>
-                  <li><a href="#!"style="color:white">CSS(0)</a></li>
-                  <li><a href="#!"style="color:white">Delphi(0)</a></li>
-                  <li><a href="#!"style="color:white">Diff(0)</a></li>
-                  <li><a href="#!"style="color:white">Django(0)</a></li>
-                  <li><a href="#!"style="color:white">DOS Batch(0)</a></li>
-                  <li><a href="#!"style="color:white">Emacs Lisp(0)</a></li>
-                </ul>
-              </div>
-              <!-- Grid column -->
-
-              <hr class="clearfix w-100 d-md-none" />
-
-              <!-- Grid column -->
-              <div class="col-md-3 mx-auto">
-                <!-- Links -->
-                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">&nbsp</h5>
-
-                <ul class="list-unstyled">
-                  <li><a href="#!"style="color:white">eZ Publish(0)</a></li>
-                  <li><a href="#!"style="color:white">Forth(0)</a></li>
-                  <li><a href="#!"style="color:white">Fortran(0)</a></li>
-                  <li><a href="#!"style="color:white">Gnuplot(0)</a></li>
-                  <li><a href="#!"style="color:white">Groovy(0)</a></li>
-                  <li><a href="#!"style="color:white">HAML(0)</a></li>
-                  <li><a href="#!"style="color:white">Haskell(0)</a></li>
-                  <li><a href="#!"style="color:white">HTML(0)</a></li>
-                  <li><a href="#!"style="color:white">iPhone(0)</a></li>
-                  <li><a href="#!"style="color:white">Java(0)</a></li>
-                </ul>
-              </div>
-              <!-- Grid column -->
-
-              <hr class="clearfix w-100 d-md-none" />
-
-              <!-- Grid column -->
-              <div class="col-md-3 mx-auto">
-                <!-- Links -->
-                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">
-                  Contact
-                </h5>
-
-                <ul class="list-unstyled">
-                  <li style="color: white">
-                    Address: 101,Raghav Apartment Reshimbaug Square, Nagpur,
-                    M.H. India
+              <div style="float: right">
+                <ul style="list-style-type: none">
+                  <li style="float: left">
+                    <p style="margin-top: 5px">or Login with&nbsp&nbsp</p>
                   </li>
-                  <li style="color: white">Contact no: 99778866##</li>
-                  <li>
-                    <a href="https://skillshipfoundation.com/" style="color:white"
-                      >Skillship foundation</a
+                  <li style="float: left">
+                    <a href="#" style="text-decoration: none"
+                      ><img
+                        src="/images/google.png"
+                        alt="google"
+                        style="
+                          height: 20px;
+                          width: 20px;
+                          margin-right: 5px;
+                          margin-top: 5px;
+                        "
+                      />&nbsp&nbsp</a
+                    >
+                  </li>
+                  <li style="float: left">
+                    <a href="#" style="text-decoration: none"
+                      ><img
+                        src="/images/face.svg"
+                        alt="facebook"
+                        style="
+                          height: 20px;
+                          width: 20px;
+                          margin-right: 5px;
+                          margin-top: 5px;
+                        "
+                      />&nbsp&nbsp</a
+                    >
+                  </li>
+                  <li style="float: left">
+                    <a href="#" style="text-decoration: none"
+                      ><img
+                        src="/images/github.svg"
+                        alt="github"
+                        style="
+                          height: 20px;
+                          width: 20px;
+                          margin-right: 5px;
+                          margin-top: 5px;
+                        "
+                      />&nbsp&nbsp</a
+                    >
+                  </li>
+                  <li style="float: left">
+                    <a href="#" style="text-decoration: none"
+                      ><img
+                        src="/images/ln.png"
+                        alt="Linkedin"
+                        style="
+                          height: 20px;
+                          width: 20px;
+                          margin-right: 5px;
+                          margin-top: 5px;
+                        "
+                      />&nbsp&nbsp</a
                     >
                   </li>
                 </ul>
               </div>
-              <!-- Grid column -->
-            </div>
-            <!-- Grid row -->
+            </form>
           </div>
-          <!-- Footer Links -->
-
-          <!-- Copyright -->
-          <div class="footer-copyright text-center py-3">
-            <table style="width: 100%">
-              <tr>
-                <td>
-                  <p style="float: left; margin-left: 8%">
-                    © 2020 Codestunt, Skillship foundation. All Rights Reserved
-                    · <a href="#" style="color:white">Privacy</a> · <a href="#" style="color:white">Terms</a>
-                  </p>
-                </td>
-                <td>
-                  <a href="#"
-                    ><button type="button" class="btn btn-dark">
-                      Back to top
-                    </button>
-                  </a>
-                </td>
-              </tr>
-            </table>
-          </div>
-          <!-- Copyright -->
-        </footer>
+        </div>
       </div>
-
-      <!-- Optional JavaScript -->
-      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script
-        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"
-      ></script>
-      <script
-        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"
-      ></script>
-      <script
-        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"
-      ></script>
     </div>
+    <!--NAV BAR ENDED-->
+    <div class="hero">
+    <div class="container-fluid" style="margin-left: 0px; margin-right: 0px">
+      <!--Post form-->
+      <form
+        id="postform"
+        enctype="multipart/form-data"
+        style="margin-top: 100px"
+        action="/posts/post"
+        method="POST"
+      >
+        <h3 class="text-center" id="msg"></h3>
+        <h2 style="margin-left: 25px">Post Your Code</h2>
+        <table style="width: 80%; margin-left: 2%">
+          <tr>
+            <td>
+              <div class="form-group">
+                <label for="Title">Title</label>
+                <input
+                  type="Title"
+                  class="form-control"
+                  id="title"
+                  name="title"
+                  aria-describedby="titleHelp"
+                />
+              </div>
+              <div class="form-group">
+                <label for="description">Description</label>
+                <input
+                  type="Description"
+                  class="form-control"
+                  id="description"
+                  name="description"
+                />
+              </div>
+            </td>
+          </tr>
+        </table>
+        <div class="form-group" style="margin-left: 30px">
+          <label for="language">Choose your Language:</label>
+          <select id="langauge" name="language">
+            <option value="Html">Html</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="C++">C++</option>
+            <option value="Java">Java</option>
+            <option value="C">C</option>
+            <option value="Python">Python</option>
+            <option value="Ruby">Ruby</option>
+            <option value="Matlab">Matlab</option>
+            <option value="C#">C#</option>
+            <option value="Xml">Xml</option>
+            <option value="JQuery">JQuery</option>
+            <option value="Sql">SQL</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group" style="margin-left: 30px">
+          <label for="image"
+            ><b>Upload a thumbnail Image for your code:</b></label
+          >
+          <input
+            type="file"
+            class="form-control-file"
+            id="image"
+            name="image"
+          />
+        </div>
+
+        <div class="form-group" style="margin-left: 35px; margin-right: 35px">
+          <textarea
+            name="editor1"
+            id="editor1"
+            rows="20"
+            cols="200"
+            style="width: 90px"
+          >
+       //Enter your code here
+    </textarea
+          >
+          <script>
+            // Replace the <textarea id="editor1"> with a CKEditor 4
+            // instance, using default configuration.
+            CKEDITOR.replace("editor1");
+          </script>
+        </div>
+        <button
+          type="submit"
+          id="post"
+          class="btn btn-primary"
+          style="margin-left: 40px; width: 90px; font-weight: 900"
+        >
+          Post
+        </button>
+      </form>
+
+      <!--Post form ends-->
+
+      <!-- Footer -->
+      <footer
+        class="container pt-4 my-md-5 pt-md-5 border-top align-items-end"
+      ></footer>
+      <footer class="page-footer font-small indigo">
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+          <!-- Grid row -->
+          <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-3 mx-auto">
+              <!-- Links -->
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">
+                Categories
+              </h5>
+
+              <ul class="list-unstyled">
+                <li><a href="#!" style="color:white">ActionScript(0)</a></li>
+                <li><a href="#!" style="color:white">ActionScript 3(0)</a></li>
+                <li><a href="#!" style="color:white">Apache(0)</a></li>
+                <li><a href="#!"style="color:white">AppleScript(0)</a></li>
+                <li><a href="#!"style="color:white">ASP(0)</a></li>
+                <li><a href="#!"style="color:white">Assembler(0)</a></li>
+                <li><a href="#!"style="color:white">AutoIt(0)</a></li>
+                <li><a href="#!"style="color:white">Awk(0)</a></li>
+                <li><a href="#!"style="color:white">Bash(0)</a></li>
+                <li><a href="#!"style="color:white">C(0)</a></li>
+              </ul>
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none" />
+
+            <!-- Grid column -->
+            <div class="col-md-3 mx-auto">
+              <!-- Links -->
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">&nbsp</h5>
+
+              <ul class="list-unstyled">
+                <li><a href="#!"style="color:white">C#(0)</a></li>
+                <li><a href="#!"style="color:white">C++(0)</a></li>
+                <li><a href="#!"style="color:white">Clojure(0)</a></li>
+                <li><a href="#!"style="color:white">ColdFusion(0)</a></li>
+                <li><a href="#!"style="color:white">CSS(0)</a></li>
+                <li><a href="#!"style="color:white">Delphi(0)</a></li>
+                <li><a href="#!"style="color:white">Diff(0)</a></li>
+                <li><a href="#!"style="color:white">Django(0)</a></li>
+                <li><a href="#!"style="color:white">DOS Batch(0)</a></li>
+                <li><a href="#!"style="color:white">Emacs Lisp(0)</a></li>
+              </ul>
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none" />
+
+            <!-- Grid column -->
+            <div class="col-md-3 mx-auto">
+              <!-- Links -->
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">&nbsp</h5>
+
+              <ul class="list-unstyled">
+                <li><a href="#!"style="color:white">eZ Publish(0)</a></li>
+                <li><a href="#!"style="color:white">Forth(0)</a></li>
+                <li><a href="#!"style="color:white">Fortran(0)</a></li>
+                <li><a href="#!"style="color:white">Gnuplot(0)</a></li>
+                <li><a href="#!"style="color:white">Groovy(0)</a></li>
+                <li><a href="#!"style="color:white">HAML(0)</a></li>
+                <li><a href="#!"style="color:white">Haskell(0)</a></li>
+                <li><a href="#!"style="color:white">HTML(0)</a></li>
+                <li><a href="#!"style="color:white">iPhone(0)</a></li>
+                <li><a href="#!"style="color:white">Java(0)</a></li>
+              </ul>
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none" />
+
+            <!-- Grid column -->
+            <div class="col-md-3 mx-auto">
+              <!-- Links -->
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Contact</h5>
+
+              <ul class="list-unstyled">
+                <li style="color: white">
+                  Address: 101,Raghav Apartment Reshimbaug Square, Nagpur, M.H.
+                  India
+                </li>
+                <li style="color:white">Contact no: 99778866##</li>
+                <li>
+                  <a href="https://skillshipfoundation.com/"
+                    style="color:white">Skillship foundation</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+          <table style="width: 100%">
+            <tr>
+              <td>
+                <p style="float: left; margin-left: 8%">
+                  © 2020 Codestunt, Skillship foundation. All Rights Reserved ·
+                  <a href="#" style="color:white">Privacy</a> · <a href="#" style="color:white">Terms</a>
+                </p>
+              </td>
+              <td>
+                <a href="#"
+                  ><button type="button" class="btn btn-dark">
+                    Back to top
+                  </button>
+                </a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    </div>
+  </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $("#postform").submit((e) => {
+        console.log("hello");
+        e.preventDefault();
+        var form = $(this);
+        console.log(form);
+        fetch("/posts/post", {
+          body: new FormData(postform),
+          method: "POST",
+        }).then((res) => {
+          if (res) {
+            document.getElementById("msg").innerHTML = "Post Uploaded";
+            document.getElementById("msg").style.color = "green";
+          } else {
+            document.getElementById("msg").innerHTML = "Error, try again!";
+            document.getElementById("msg").style.color = "red";
+          }
+        });
+      });
+    </script>
+
   </body>
 </html>
